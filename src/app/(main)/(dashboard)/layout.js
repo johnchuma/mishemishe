@@ -25,7 +25,7 @@ const Page = ({children}) => {
             </svg>
             
             },
-        ].map((item)=><Link className={`${pathname==item.link?"bg-yellow-200 ":"bg-white"} px-4 py-3 flex items-center space-x-3`} href={item.link}>
+        ].map((item,key)=><Link key={key} className={`${pathname==item.link?"bg-yellow-200 ":"bg-white"} px-4 py-3 flex items-center space-x-3`} href={item.link}>
             <div>{item.icon}</div>
             <div className="font-medium text-sm">
             {item.title}

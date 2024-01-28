@@ -15,7 +15,7 @@ const Page = ({children}) => {
                            
               },
                
-        ].map((item)=><div onClick={()=>{
+        ].map((item,key)=><div key={key} onClick={()=>{
             router.back()
         }} className={`bg-yellow-200  px-4 py-3 flex items-center space-x-3`} href={item.link}>
             <div>{item.icon}</div>

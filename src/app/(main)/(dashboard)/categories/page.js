@@ -30,8 +30,8 @@ const Page = () =>{
              <div className="bg-white w-full px-12 py-8 ">
 
                 {categories.length<1?<div></div>:<div className="grid grid-cols-6 gap-y-6">
-                    {categories.map((item)=>{
-                        return <div className="flex flex-col items-center">
+                    {categories.map((item,key)=>{
+                        return <div key={key} className="flex flex-col items-center">
                             <div dangerouslySetInnerHTML={{ __html:item.icon }}></div>
                             <div className="text-sm font-medium">{item.name}</div>
                         </div>

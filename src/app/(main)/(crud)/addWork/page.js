@@ -59,7 +59,7 @@ const Page = () => {
                         <div className="text-sm font-medium pb-4">Work category</div>
                         <select required name="category_uuid" className="border focus:ring-slate-300 focus:border-0 border-slate-300 w-full bg-slate-50" type="text">
                             <option>Select category</option>
-                            {categories.map((item)=><option value={item.uuid}>{item.name}</option>)}
+                            {categories.map((item,key)=><option key={key} value={item.uuid}>{item.name}</option>)}
                         </select>
                     </div>
                     <div>
@@ -70,7 +70,7 @@ const Page = () => {
                         <div className="text-sm font-medium pb-4">Select region</div>
                         <select required name="address" className="border focus:ring-slate-300 focus:border-0 border-slate-300 w-full bg-slate-50" type="text">
                             <option>Select region</option>
-                            {regions.map((item)=><option value={item}>{item}</option>)}
+                            {regions.map((item,key)=><option key={key} value={item}>{item}</option>)}
                         </select>
                     </div>
                     <div>
