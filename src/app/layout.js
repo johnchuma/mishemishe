@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Inter, Jost, Montserrat, Outfit, Prompt, Roboto, Sora, Varela_Round } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = Montserrat({ subsets: ["vietnamese"]});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body  className={`${inter.className} bg-slate-200 font-medium`}>
+        {children}</body>
     </html>
   );
 }
